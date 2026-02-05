@@ -3,40 +3,86 @@ body {
     background-attachment: fixed;
     background-repeat: repeat;
     overflow: hidden;
-
-
 }
 
-.site-content {
-    width: auto;
-    margin: 10px;
-    margin-top: 20px;
+::selection {
+    background: #f7abcf;
+    color: #FFFFFF;
+}
 
-    /*(c) solielios*/
-    border-width: 12px;
+/* see if you can fix ! */
+.mouse {
+    cursor: url(./assets/cursor-wing.cur), auto !important;
+}
+
+
+/* background for all content */
+.base {
+    border-width: 7px;
     border-style: solid;
-    border-image: url(./assets/site-border.png) 11 fill round;
+    border-image: url(/assets/border\ 1.gif) 7 fill round;
+    margin: 50px;
 }
 
-.title-card {
-    max-width: auto;
+.top-deco {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-}
-
-.title-card-element {
     margin: auto;
 }
 
-.intro {
-    max-width: auto;
+
+.left {
+    border: #866d6d;
+    background-color: #ffd7ea;
+    border-width: 2px;
+    border-style: dashed;
+    width: 115px;
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+
 }
 
-.intro-element {
-    margin: auto;
+.center {
+    border-style: solid;
+    width: 233px;
+    overflow: auto;
+    float: left;
+}
+
+.footer {
+    width: 200px;
+}
+
+
+
+
+
+/* button decor */
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    /* box */
+    width: 100px;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey,
+        inset 2px 0px #dfdfdf;
+    border-radius: 5px;
+    background: #c9c9c9;
+    padding: 9px;
+    margin: 5px;
+
+    /* text display */
+    line-height: 1;
+    font-family: ms-sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+/* I dont think ts works */
+@font-face {
+    font-family: ms-sans-serif;
+    src: url(https://dl.dropbox.com/s/ngpec1t1x4ceksb/ms-sans-serif.ttf);
 }
